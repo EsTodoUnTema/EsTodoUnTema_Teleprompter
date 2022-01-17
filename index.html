@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Teleprompter</title>
+
+	<link rel="icon" href="/images/favicon.ico" />
+
+	<link rel="stylesheet" href="styles.css">
+
+	<meta charset="UTF-8">
+	<meta name="description" content="Teleprompter">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="author" content="Francisco Ciampo">
+</head>
+
+<body>
+	<a id="top"></a>
+	<nav id="nav-bar">
+		<div class="nav-bar_elements" id="nav-bar_play-pause" title="Play/Pause">
+
+			<img src="images/speedometer.svg" id="speedometer" />
+			<img src="images/speedometer_arrow.svg" id="speedometer_arrow" />
+			<img src="images/play.svg" id="play_pause" />
+		</div>
+
+
+		<div class="nav-bar_elements" id="nav-bar_page-controls">
+			<a href="#top"><img id="top-img" title="Go to top" class="nav-bar_page-controls" src="/images/top.svg"></img></a>
+			<a href="#bottom"><img id="bottom-img" title="Go to bottom" class="nav-bar_page-controls" src="/images/bottom.svg"></img></a>
+		</div>
+
+
+		<div class="nav-bar_elements" id="nav-bar_text-config">
+
+			<select id="font_selector" title="Font">
+				<option value="Lexend">Lexend</option>
+				<option value="sans-serif">sans-serif</option>
+				<option value="serif">serif</option>
+				<option value="fantasy">fantasy</option>
+			</select>
+
+			<input type="number" id="text_size_selector" value="9" max="50" title="Text size"></input>
+			<input type="number" id="margins_selector" title="Margin size" min=0></input>
+
+			<input type="checkbox" id="invert" title="Light/Dark">
+
+		</div>
+	</nav>
+
+
+	<div id="TEXTCONTAINER">
+		<p id="ELTEXTO" contentEditable="true">
+			"If you were God and your delusions became reality.
+			<br>
+			What kind of delusions would you imagine?
+			<br>
+			A sensual world? A despotic society?
+			<br>
+			Destructive sanctions?
+			<br>
+			Or..."
+		</p>
+	</div>
+
+	<a id="bottom"></a>
+</body>
+
+<script src="main.js"></script>
+
+</html>
